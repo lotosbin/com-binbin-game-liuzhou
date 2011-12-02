@@ -8,8 +8,8 @@ function GameRender() {
 	IObserver.call(this);
 }
 GameRender.prototype.update = function(observer, msg) {
-	var canvas = $('canvasMain');
-	var ctx = canvas.getContext("2d");
+	var canvas = $('#canvasMain');
+	var ctx = canvas[0].getContext("2d");
 
 	ctx.fillStyle = "rgb(200,0,0)";
 	ctx.fillRect(10, 10, 55, 50);
